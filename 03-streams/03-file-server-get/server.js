@@ -17,8 +17,6 @@ server.on('request', (req, res) => {
     return;
   }
 
-  console.log(fileName);
-
   if (!re.test(fileName)) {
     res.statusCode = 400;
     res.end('Bad request');
